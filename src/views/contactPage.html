@@ -2,25 +2,52 @@
 <html lang="es">
 <head>
     <%- include('./partial/head.html') %> 
+
+    <link rel="stylesheet" href="style/styleContactPage.css">
 </head>
 <body>
-    <div class="contenedor">
-        <!-- Navegacion - Submenus -->
-        <%- include('./partial/nav.html') %> 
-        
-        <!-- Titulo de pagina -->
-		<div class="titulo">
-			<div class="titulo__contenedor">
-				<div class="titulo__textos">
-					<h1 class="titulo__titulo">Contacto</h1>
-					<h2 class="titulo__subtitulo">Encuentrame en...</h2>
-				</div>
-			</div>
+  <div class="contenedor">
+    <!-- Navegacion - Submenus -->
+    <%- include('./partial/nav.html') %> 
+    
+    <!-- Titulo de pagina -->
+    <div class="titulo">
+      <div class="titulo__contenedor">
+        <div class="titulo__textos">
+          <h1 class="titulo__titulo">Contacto</h1>
+          <h2 class="titulo__subtitulo">Encuentrame en...</h2>
         </div>
-
-        <!-- SCRIPTS -->
-        <!-- Menus laterales -->
-        <script src="/code/menu.js"></script>
+      </div>
     </div>
+
+    <div class="contenido">
+
+      <div class="formulario-contenedor">
+        <form id="formulario" action="/send-email" method="POST">
+  
+          <h2>Enviame un correo...</h2>
+
+          <div class="formulario__input">
+            <input type="text" name="nombre" placeholder="¿Cual es tu nombre?" required>
+    
+            <input type="email" name="correo" placeholder="¿Cual es tu correo electronico?" required>
+    
+            <textarea name="mensaje" placeholder="Escribe aqui tu mensaje..." rows="6" required></textarea>
+    
+            <input type="submit" value="ENVIAR" id="boton-enviarmail">
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Pie de pagina -->
+    <%- include("./partial/footer.html") %> 
+  </div>
+  
+  <!-- SCRIPTS -->
+  <!-- Menus laterales -->
+  <script src="/code/menu.js"></script>
 </body>
 </html>
