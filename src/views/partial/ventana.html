@@ -1,0 +1,83 @@
+<html lang="es">
+
+<div class="ventana">
+    <div class="ventana__fondo">
+        <div class="ventana__contenedor ventana__contenedor-cerrar">
+            <div class="ventana__salir" id="ventana-salir">
+                <p>X</p>
+            </div>
+            <div class="ventana__contenido">
+                <div class="ventana__imagen">
+                    <img id="ventana__img" src="./img/planetas/planeta_jupiter.svg">
+                </div>
+
+                <div class="ventana__textos">
+                    <h1 class="ventana__nombre-astro">
+                        Astro ###
+                    </h1>
+
+                    <div class="ventana__cont-tabla">
+                        <table class="ventana__tabla">
+                            <tr class="ventana__fila">
+                                <th class="ventana__columna-1">Diámetro sobre el ecuador: </th>
+                                <th class="ventana__columna-2"><span id="valor-diametro">##</span> <strong>Km</strong></th>
+                            </tr>
+                            <tr class="ventana__fila">
+                                <th class="ventana__columna-1">Masa planetaria: </th>
+                                <th class="ventana__columna-2"><span id="valor-masa">##</span> <strong>*</strong></th>
+                            </tr>
+                            <tr class="ventana__fila">
+                                <th class="ventana__columna-1">Duración de la traslación: </th>
+                                <th class="ventana__columna-2"><span id="valor-traslacion">##</span> <strong>Días</strong></th>
+                            </tr>
+                            <tr class="ventana__fila">
+                                <th class="ventana__columna-1">Duración de la rotación: </th>
+                                <th class="ventana__columna-2"><span id="valor-rotacion">##</span> <strong>Días</strong></th>
+                            </tr>
+                            <tr class="ventana__fila">
+                                <th class="ventana__columna-1">Satélites naturales: </th>
+                                <th class="ventana__columna-2"><span id="valor-satelites">##</span></th>
+                            </tr>
+                        </table>
+                        <small>* La masa se presenta en relación a la Tierra.</small>
+                    </div>
+
+                    <div class="ventana__formulario">
+                        <h2 class="ventana__form-titulo">¿Quieres saber cuanto seria tu peso en este lugar?</h2>
+                        <div class="ventana__formulario">
+                            <input type="number" class="ventanta__form-input" min="0" placeholder="Escribe tu peso en Kg">
+                            <div class="boton ventana__form-btn">
+                                <a class="boton__texto">CALCULAR</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ventana-sec">
+    <div class="ventana-sec__fondo">
+        <div class="ventana-sec__contenedor ventana-sec__contenedor-cerrar">
+            <div class="ventana-sec__salir">
+                <p>X</p>
+            </div>
+            <div class="ventana-sec__contenido">
+                <div class="ventana-sec-textos">
+                    <p>Tu peso en <span id="titulo2-modal">pLaNeTa</span> seria de: </p>
+                    <h2><span id="resultado-peso">##</span> Kg</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- SCRIPTS -->
+<!-- Variables ventanas -->
+<script src="/code/ventanaVariables.js"></script>
+<!-- Ventanas emergentes -->
+<script src="/code/ventanaFunciones.js"></script>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+	<!-- Incluir todo el Head -->
+	<%- include('./partial/head.html') %> 
+	
+</head>
+<body>
+
+	<!-- Contenedor de Web -->
+	<div class="contenedor">
+		<!-- Navegacion - Submenus -->
+		<%- include('./partial/nav.html') %> 
+
+		<!-- Titulo de pagina -->
+		<div class="titulo">
+			<div class="titulo__contenedor">
+				<div class="titulo__textos">
+					<h1 class="titulo__titulo">Sistema Solar</h1>
+					<h2 class="titulo__subtitulo">Despeguemos...</h2>
+				</div>
+			</div>
+		</div>
+
+		<!-- Tarjetas de Planetas -->
+		<div class="contenido">
+			<div class="contenido__tarjetas">
+				<!-- Mercurio -->
+				<div class="tarjeta tarjeta__derecha" id="mercurio">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_mercurio.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Mercurio</h1>
+						<p class="tarjeta__parrafo">
+							El planeta más cercano al Sol y el segundo más pequeño del Sistema Solar. Es menor que la Tierra, pero más grande que la Luna y su superficie es semejante a esta.
+						</p>
+						<div class="boton tarjeta__boton" id="mercurio-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Venus -->
+				<div class="tarjeta tarjeta__izquierda" id="venus">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_venus.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Venus</h1>
+						<p class="tarjeta__parrafo">
+							El planeta más semejante a la Tierra en su tamaño, masa, densidad y volumen, además de ser hermanos por formarse a partir de la misma nebulosa. En la superficie se encuentran amplísimas llanuras, atravesadas por enormes ríos de lava, y algunas
+							montañas.
+						</p>
+						<div class="boton tarjeta__boton" id="venus-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Tierra -->
+				<div class="tarjeta tarjeta__derecha" id="tierra">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_tierra.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Tierra</h1>
+						<p class="tarjeta__parrafo">
+							Es nuestro planeta y el único habitado. Está justo en el espacio que rodea al Sol en donde se encuentran las condiciones necesarias para que exista vida. La Tierra es el mayor de los planetas rocosos lo que le otorga una amplia atmosfera.
+						</p>
+						<div class="boton tarjeta__boton" id="tierra-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Marte -->
+				<div class="tarjeta tarjeta__izquierda" id="marte">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_marte.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Marte</h1>
+						<p class="tarjeta__parrafo">
+							Cuarto planeta del Sistema Solar. Conocido como el planeta rojo por sus tonos rosados, los romanos lo identificaban con la sangre y le pusieron el nombre del planeta a su dios de la guerra.
+						</p>
+						<div class="boton tarjeta__boton" id="marte-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Jupiter -->
+				<div class="tarjeta tarjeta__derecha" id="jupiter">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_jupiter.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Jupiter</h1>
+						<p class="tarjeta__parrafo">
+							El planeta más grande del Sistema Solar, tiene más materia que todos los demás planetas juntos y su volumen es mil veces el de la Tierra. Júpiter tiene un tenue sistema de anillos, invisible desde la Tierra.
+						</p>
+						<div class="boton tarjeta__boton" id="jupiter-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Saturno -->
+				<div class="tarjeta tarjeta__izquierda" id="saturno">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_saturno.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Saturno</h1>
+						<p class="tarjeta__parrafo">
+							El segundo planeta más grande del Sistema Solar y el único con anillos visibles desde la Tierra. Es achatado en los polos a causa de la rápida rotación.
+						</p>
+						<div class="boton tarjeta__boton" id="saturno-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Urano -->
+				<div class="tarjeta tarjeta__derecha" id="urano">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_urano.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Urano</h1>
+						<p class="tarjeta__parrafo">
+							Es el séptimo planeta desde el Sol y el tercero más grande del Sistema Solar. Urano es también el primero que se descubrió gracias al telescopio. Está tan lejos que, desde Urano, el Sol parece una estrella más. Aunque, mucho más brillante que las otras.
+						</p>
+						<div class="boton tarjeta__boton" id="urano-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+				<!-- Neptuno -->
+				<div class="tarjeta tarjeta__izquierda" id="neptuno">
+					<div class="tarjeta__imagen-contenedor">
+						<img src="./img/planetas/planeta_neptuno.svg" alt="" class="tarjeta__imagen" />
+					</div>
+					<div class="tarjeta__texto-contenedor">
+						<h1 class="tarjeta__titulo">Neptuno</h1>
+						<p class="tarjeta__parrafo">
+							Es el planeta más exterior de los gigantes gaseosos y el primero que fue descubierto gracias a predicciones matemáticas. El interior de Neptuno es roca fundida junto con agua, metano y amoníaco líquidos.
+						</p>
+						<div class="boton tarjeta__boton" id="neptuno-btn">
+							<a class="boton__texto tarjeta__texto-boton"
+								>MÁS INFO<i class="fas fa-space-shuttle boton__icono"></i
+							></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pie de Pagina -->
+		<%- include('./partial/footer.html') %> 
+
+		<!-- Ventanas emergentes -->
+		<%- include('./partial/ventana.html') %> 
+	</div>
+
+	<!-- SCRIPTS -->
+	<!-- Menus laterales -->
+	<script src="/code/menu.js"></script>
+
+</body>
+</html>
