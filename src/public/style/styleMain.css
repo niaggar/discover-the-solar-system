@@ -17,7 +17,8 @@ html {
 
 body {
 	font-size: 16px;
-	background: #040916;
+  background: #040916;
+  box-sizing: border-box;
 }
 
 h1,

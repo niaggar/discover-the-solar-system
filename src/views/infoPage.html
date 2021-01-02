@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <%- include('./partial/head.html') %> 
+
+  <%- include('./partial/head.html') %> 
+
+  <!-- CSS propio de la pagina -->
+  <link rel="stylesheet" href="style/styleInfoPage.css">
+
 </head>
 <body>
-    <div class="contenedor">
-        <!-- Navegacion - Submenus -->
-        <%- include('./partial/nav.html') %>
-        
-        <!-- Titulo de pagina -->
-		<div class="titulo">
-			<div class="titulo__contenedor">
-				<div class="titulo__textos">
-					<h1 class="titulo__titulo">Información</h1>
-					<h2 class="titulo__subtitulo">Conoceme...</h2>
-				</div>
-			</div>
+
+  <div class="contenedor">
+
+    <!-- Navegacion - Submenus -->
+    <%- include('./partial/nav.html') %>
+    
+    <!-- Titulo de pagina -->
+    <div class="titulo">
+      <div class="titulo__contenedor">
+        <div class="titulo__textos">
+          <h1 class="titulo__titulo">Información</h1>
+          <h2 class="titulo__subtitulo">Conoceme...</h2>
         </div>
-        
-        <!-- SCRIPTS -->
-        <!-- Menus laterales -->
-        <script src="/code/menu.js"></script>
+      </div>
     </div>
+
+    <!-- Contendio de la pagina -->
+    <div class="contenido">
+      <div class="tarjeta info__tarjeta">
+        <div class="tarjeta__imagen-contenedor info__imagen-contenedor">
+          <img src="./img/perfil.jpg" alt="" class="tarjeta__imagen info__imagen" />
+        </div>
+        <div class="tarjeta__texto-contenedor info__texto-contenedor">
+          <h1 class="tarjeta__titulo info__titulo">¡Hola!</h1>   
+          <p class="tarjeta__parrafo info__parrafo">
+            Soy <strong>Nicolas Aguilera García</strong>, un joven estudiante que esta por aventurararse a la universidad y aunque mi pasion es la Física, la progracación y la tecnología me encantan.
+            <br>
+            Este proyecto lo realice a punta de <i>Html</i>, <i>Css</i>, <i>JavaScript</i> y <i>NodeJS</i> junto con otras tecnologias y programas como lo es <i>Ilustrator</i> para diseñar los planetas...
+            <br>
+            Ah sí, también muchos videos... 
+            <br>
+          </p>
+          <a href="" class="info__link">
+            <strong>Más Proyectos...</strong>
+          </a>
+        </div>  
+      </div>
+    </div>
+      
+    <!-- Pie de Pagina -->
+    <%- include("./partial/footer.html") %> 
+    
+  </div>
+
+  <!-- SCRIPTS -->
+  <!-- Menus laterales -->
+  <script src="/code/menu.js"></script>
+  
 </body>
 </html>
